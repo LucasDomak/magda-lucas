@@ -9,4 +9,5 @@ WORKDIR /app
 RUN python3 -m pip install -r requirements.txt
 RUN python3 -m pip install pip --upgrade
 
+CMD docker-compose.yml
 CMD ["python3", "start.py"]
