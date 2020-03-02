@@ -1,0 +1,107 @@
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+
+                <div class="col-xs-6 col-xs-offset-7 col-md-3 col-md-offset-5">
+                    <div class="btn-group">
+
+                        <ul class="dropdown-menu pb-chat-dropdown">
+
+                                <div class="panel panel-info pb-chat-panel">
+                                    <div class="panel panel-heading pb-chat-panel-heading">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h1> Contacts</h1>
+                                              {% for i in lista_de_rotas %}
+                                                <div>
+                                                <a href=/{{i}}>
+                                                    {{i}}
+<!--                                                    <label id="support_label">{{i}}</label>-->
+                                                </a>
+                                                </div>
+                                              {% endfor %}
+
+<!--                                                <a href="#"><span class="fa fa-cog pull-right pb-chat-top-icons"></span></a>-->
+<!--                                                <a href="#"><span class="fa fa-share pull-right pb-chat-top-icons"></span></a>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<style>
+    .pb-chat-panel {
+        border: none;
+        margin-bottom: -5px;
+    }
+
+    .pb-chat-panel-heading {
+        margin-top: -5px;
+    }
+
+    .pb-chat-top-icons {
+        margin-top: 4px;
+    }
+
+    #support_label {
+        color: #999;
+    }
+
+    .pb-chat-labels {
+        font-size: 15px;
+    }
+
+    .pb-chat-labels-right {
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+
+
+    .pb-chat-labels-left {
+        margin-left: 5px;
+    }
+
+    .pb-chat-labels-primary {
+        margin-right: 5px;
+    }
+
+    .pb-chat-fa-user {
+        border: 1px solid blue;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    .pb-chat-textarea {
+        resize: none;
+
+    }
+
+    .pb-chat-dropdown {
+        width: 300px;
+    }
+
+    .pb-chat-btn-circle {
+        border-radius: 35px;
+    }
+
+    .pb-btn-circle-div {
+        padding-left: 0px;
+        margin-top: 12px;
+    }
+    .row{
+    padding-left: 200px;
+    }
+    .col-xs-12{
+    padding-left: 200px;
+    }
+</style>

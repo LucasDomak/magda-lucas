@@ -1,0 +1,16 @@
+version: '2.1'
+
+services:
+  carminho:
+    image: carminho
+    build: .
+    ports:
+      - 5005:5005
+  db:
+    image: mongo:4.2.3
+  rabbit:
+      hostname: rabbit
+      image: rabbitmq:latest
+      ports:
+        - "5672:5672"
+
